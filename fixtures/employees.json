@@ -1,0 +1,299 @@
+[
+  {
+    "model": "hrapp.employee",
+    "pk":1,
+    "fields": {
+      "first_name": "Quokka",
+      "last_name": "McDougal",
+      "department": 1
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":2,
+    "fields": {
+      "first_name": "Shem",
+      "last_name": "Flipperman",
+      "department": 2
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":3,
+    "fields": {
+      "first_name": "Sandra",
+      "last_name": "Dayo",
+      "department": 3
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":4,
+    "fields": {
+      "first_name": "Chuck",
+      "last_name": "Wagon",
+      "department": 4
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":5,
+    "fields": {
+      "first_name": "Benji",
+      "last_name": "Doggo",
+      "department": 5
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":6,
+    "fields": {
+      "first_name": "Mildred",
+      "last_name": "Spence",
+      "department": 1
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":7,
+    "fields": {
+      "first_name": "George",
+      "last_name": "Washingday",
+      "department": 2
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":8,
+    "fields": {
+      "first_name": "Lola",
+      "last_name": "Fruitcup",
+      "department": 3
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":9,
+    "fields": {
+      "first_name": "Rayshawn",
+      "last_name": "Seanrae",
+      "department": 4
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":10,
+    "fields": {
+      "first_name": "Juanita",
+      "last_name": "Del Rio",
+      "department": 5
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":11,
+    "fields": {
+      "first_name": "Sanjay",
+      "last_name": "Jain",
+      "department": 1
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":12,
+    "fields": {
+      "first_name": "Emilie",
+      "last_name": "Enright",
+      "department": 2
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":13,
+    "fields": {
+      "first_name": "Punky",
+      "last_name": "Brewmaster",
+      "department": 3
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":14,
+    "fields": {
+      "first_name": "Ralph",
+      "last_name": "Mouth",
+      "department": 4
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":15,
+    "fields": {
+      "first_name": "Belinda",
+      "last_name": "Carlysle",
+      "department": 5
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":16,
+    "fields": {
+      "first_name": "Greta",
+      "last_name": "Driveway",
+      "department": 1
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":17,
+    "fields": {
+      "first_name": "Martin",
+      "last_name": "Fender",
+      "department": 2
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":18,
+    "fields": {
+      "first_name": "Bilbo",
+      "last_name": "Baggypants",
+      "department": 3
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":19,
+    "fields": {
+      "first_name": "Renata",
+      "last_name": "Mendez",
+      "department": 4
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":20,
+    "fields": {
+      "first_name": "Steve",
+      "last_name": "Works",
+      "department": 5
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":21,
+    "fields": {
+      "first_name": "Smaug",
+      "last_name": "Dragon",
+      "department": 1
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":22,
+    "fields": {
+      "first_name": "Farley",
+      "last_name": "Wagonbottom",
+      "department": 2
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":23,
+    "fields": {
+      "first_name": "Brenda",
+      "last_name": "Vladd",
+      "department": 3
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":24,
+    "fields": {
+      "first_name": "Xavier",
+      "last_name": "Sinclavier",
+      "department": 4
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":25,
+    "fields": {
+      "first_name": "Patsy",
+      "last_name": "Kombucha",
+      "department": 5
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":26,
+    "fields": {
+      "first_name": "Keisha",
+      "last_name": "Kinetic",
+      "department": 1
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":27,
+    "fields": {
+      "first_name": "Monty",
+      "last_name": "Burns",
+      "department": 2
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":28,
+    "fields": {
+      "first_name": "Leeza",
+      "last_name": "Zimpsahn",
+      "department": 3
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":29,
+    "fields": {
+      "first_name": "Betty",
+      "last_name": "Whonte",
+      "department": 4
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":30,
+    "fields": {
+      "first_name": "Zim",
+      "last_name": "Izyuman",
+      "department": 5
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":31,
+    "fields": {
+      "first_name": "Helga",
+      "last_name": "Stuffenbergholz",
+      "department": 1
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk":32,
+    "fields": {
+      "first_name": "Barney",
+      "last_name": "Dinosaur",
+      "department": 2
+    }
+  },
+  {
+    "model": "hrapp.employee",
+    "pk": 33,
+    "fields": {
+      "first_name": "Velma",
+      "last_name": "Velvette",
+      "department": 3
+    }
+  }
+]
