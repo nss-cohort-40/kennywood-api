@@ -79,12 +79,12 @@ class ItineraryItems(ViewSet):
             Response -- 200, 404, or 500 status code
         """
         try:
-            area = Attraction.objects.get(pk=pk)
-            area.delete()
+            itinerary = Itinerary.objects.get(pk=pk)
+            itinerary.delete()
 
             return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-        except Attraction.DoesNotExist as ex:
+        except Itinerary.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
         except Exception as ex:
