@@ -63,12 +63,11 @@ def register_user(request):
         user=new_user
     )
 
-    # Commit the user to the database by saving it
-    customer.save()
-
     # Use the REST Framework's token generator on the new user account
     token = Token.objects.create(user=new_user)
 
     # Return the token to the client
+    # The json. dumps() method encodes any Python object into JSON formatted String.
     data = json.dumps({"token": token.key})
+
     return HttpResponse(data, content_type='application/json')

@@ -41,6 +41,7 @@ class ItineraryItems(ViewSet):
         new_itinerary_item.save()
 
         # change the thing we just saved to JSON
+        # When instantiating a HyperlinkedModelSerializer you must include the current request in the serializer context. Doing so will ensure that the hyperlinks can include an appropriate hostname, so that the resulting representation uses fully qualified URLs, such as: http://api.example.com/accounts/1/
         serializer = ItinerarySerializer(new_itinerary_item, context={'request': request})
 
         return Response(serializer.data)
@@ -59,16 +60,14 @@ class ItineraryItems(ViewSet):
             return HttpResponseServerError(ex)
 
     def update(self, request, pk=None):
-        """Handle PUT requests for a park area attraction
+        """Handle PUT requests for an itinerary item
 
         Returns:
             Response -- Empty body with 204 status code
         """
-        attraction = Attraction.objects.get(pk=pk)
-        area = ParkArea.objects.get(pk=request.data["area_id"])
-        attraction.name = request.data["name"]
-        attraction.area = area
-        attraction.save()
+        itenerary_item = Itinerary.objects.get(pk=pk)
+        itenerary_item.starttime = request.data["starttime"]
+        itenerary_item.save()
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)
 

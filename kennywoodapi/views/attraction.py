@@ -4,6 +4,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
+from rest_framework.decorators import action
 from kennywoodapi.models import Attraction, ParkArea
 
 
@@ -102,4 +103,14 @@ class Attractions(ViewSet):
 
         serializer = AttractionSerializer(
             attractions, many=True, context={'request': request})
+        return Response(serializer.data)
+
+    @action(detail=False)
+    def r_rides(self, request):
+        try:
+            rides = Attraction.objects.filter(name__startswith="r")
+        except Attraction.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+
+        serializer = AttractionSerializer(rides, many=True, context={'request': request})
         return Response(serializer.data)

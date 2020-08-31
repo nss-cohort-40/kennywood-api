@@ -14,13 +14,6 @@ class ParkAreaSerializer(serializers.HyperlinkedModelSerializer):
     Arguments:
         serializers
     """
-    attractions = serializers.HyperlinkedRelatedField(
-        queryset=Attraction.objects.all(),
-        view_name="attraction-detail",
-        many=True,
-        required=False,
-        lookup_field="pk"
-    )
 
     class Meta:
         model = ParkArea
@@ -29,18 +22,11 @@ class ParkAreaSerializer(serializers.HyperlinkedModelSerializer):
             lookup_field='id'
         )
         fields = ('id', 'url', 'name', 'theme', 'attractions')
-        depth = 1
 
 
 class ParkAreas(ViewSet):
-    """Park Areas for Kennywood Amusement Park"""
 
     def create(self, request):
-        """Handle POST operations
-
-        Returns:
-            Response -- JSON serialized ParkArea instance
-        """
         newarea = ParkArea()
         newarea.name = request.data["name"]
         newarea.theme = request.data["theme"]
@@ -101,6 +87,6 @@ class ParkAreas(ViewSet):
             Response -- JSON serialized list of park areas
         """
         areas = ParkArea.objects.all()
-        serializer = ParkAreaSerializer(
-            areas, many=True, context={'request': request})
+        serializer = ParkAreaSerializer(areas, many=True, context={'request': request})
+
         return Response(serializer.data)
